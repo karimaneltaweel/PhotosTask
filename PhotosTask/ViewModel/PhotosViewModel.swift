@@ -70,11 +70,7 @@ class PhotosViewModel{
         }
     }
     
-    func retrivePhoto(withId id: Int) -> Photo? {
-          guard let photo = dataSource?.first(where: {$0.id == id}) else {
-              return nil
-          }
-          
+    func retrivePhoto(photo: Photo) -> Photo? {
           return photo
       }
 }

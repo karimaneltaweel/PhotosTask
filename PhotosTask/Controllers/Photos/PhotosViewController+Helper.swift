@@ -46,8 +46,8 @@ extension PhotosViewController{
         }
     }
     
-    func openDetails(photoId:Int) {
-        guard let photo = viewModel.retrivePhoto(withId: photoId) else {
+    func openDetails(photo:Photo) {
+        guard let photo = viewModel.retrivePhoto(photo: photo) else {
              return
          }
          
@@ -55,9 +55,7 @@ extension PhotosViewController{
              let photoZoomViewModel = PhotoZoomingViewModel(photo: photo)
              let controller = PhotoZoomingViewController(viewModel: photoZoomViewModel)
              controller.modalPresentationStyle = .fullScreen
-
              self.navigationController?.present(controller, animated: true)
-//             self.navigationController?.pushViewController(controller, animated: true)
          }
      }
  }

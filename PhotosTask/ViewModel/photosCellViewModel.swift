@@ -11,14 +11,14 @@ class photosCellViewModel{
     var photoData: Photo
 
     var title: String?
-    var image: URL?
+    var imageUrl:String?
     var id:Int?
     
     init(photo: Photo) {
         self.photoData = photo
         self.title =  "\(photo.title ?? "")"
         self.id = photo.id
-        self.image =  URL(string: photo.url ?? "" )
+        self.imageUrl = photo.url
     }
     
 }

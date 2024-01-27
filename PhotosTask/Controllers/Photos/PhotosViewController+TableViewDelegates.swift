@@ -34,7 +34,7 @@ extension PhotosViewController:UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let photoId = PhotosData[indexPath.row].id ?? 0
-        self.openDetails(photoId:photoId)
+        self.openDetails(photo:PhotosData[indexPath.row].photoData)
       }
     
 }

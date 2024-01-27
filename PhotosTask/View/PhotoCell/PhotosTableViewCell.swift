@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SDWebImage
 
 class PhotosTableViewCell: UITableViewCell {
     
@@ -32,7 +31,7 @@ class PhotosTableViewCell: UITableViewCell {
        }
     
     func setUpPhotoCell(photoCell:photosCellViewModel){
-        photo.sd_setImage(with: photoCell.image)
+        photo.cacheImage(urlString:photoCell.imageUrl ?? "")
         photoTitle.text = photoCell.title
     }
 }

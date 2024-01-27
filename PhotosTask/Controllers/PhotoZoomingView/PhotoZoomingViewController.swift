@@ -28,14 +28,12 @@ class PhotoZoomingViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.minimumZoomScale = 1.0
-        scrollView.maximumZoomScale = 6.0
-        scrollView.delegate = self
+        configurScroll()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        configurScroll()
+        configView()
     }
     
     
@@ -44,7 +42,7 @@ class PhotoZoomingViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func configView() {
-        img.sd_setImage(with: viewModel.photo)
+        img.cacheImage(urlString:viewModel.PhotoUrl)
     }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {

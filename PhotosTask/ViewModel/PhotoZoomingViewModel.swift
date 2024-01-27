@@ -8,11 +8,10 @@
 import Foundation
 
 class PhotoZoomingViewModel{
-    
-    var photo:URL?
+    var PhotoUrl:String
     
     init(photo: Photo) {
-        self.photo =  URL(string: photo.url ?? "" )
+        self.PhotoUrl = photo.url ?? ""
     }
 
 }
