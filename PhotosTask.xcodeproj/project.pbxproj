@@ -17,10 +17,6 @@
 		DDD6220D2B63E53900EE8B49 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD6220C2B63E53900EE8B49 /* PhotosViewModel.swift */; };
 		DDD6220F2B6459D800EE8B49 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD6220E2B6459D800EE8B49 /* Request.swift */; };
 		DDD622122B645ABA00EE8B49 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DDD622112B645ABA00EE8B49 /* Alamofire */; };
-		DDD622152B645C2300EE8B49 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = DDD622142B645C2300EE8B49 /* NVActivityIndicatorView */; };
-		DDD622172B645C2300EE8B49 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = DDD622162B645C2300EE8B49 /* NVActivityIndicatorViewExtended */; };
-		DDD6221A2B645CBB00EE8B49 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DDD622192B645CBB00EE8B49 /* SDWebImage */; };
-		DDD6221C2B645CBB00EE8B49 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DDD6221B2B645CBB00EE8B49 /* SDWebImageMapKit */; };
 		DDD6221E2B645D1F00EE8B49 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD6221D2B645D1F00EE8B49 /* Urls.swift */; };
 		DDD622212B645E6500EE8B49 /* UIImageViewExtenion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622202B645E6500EE8B49 /* UIImageViewExtenion.swift */; };
 		DDD622232B6461ED00EE8B49 /* Serivces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622222B6461ED00EE8B49 /* Serivces.swift */; };
@@ -68,10 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD622172B645C2300EE8B49 /* NVActivityIndicatorViewExtended in Frameworks */,
-				DDD6221C2B645CBB00EE8B49 /* SDWebImageMapKit in Frameworks */,
-				DDD622152B645C2300EE8B49 /* NVActivityIndicatorView in Frameworks */,
-				DDD6221A2B645CBB00EE8B49 /* SDWebImage in Frameworks */,
 				DDD622122B645ABA00EE8B49 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,10 +223,6 @@
 			name = PhotosTask;
 			packageProductDependencies = (
 				DDD622112B645ABA00EE8B49 /* Alamofire */,
-				DDD622142B645C2300EE8B49 /* NVActivityIndicatorView */,
-				DDD622162B645C2300EE8B49 /* NVActivityIndicatorViewExtended */,
-				DDD622192B645CBB00EE8B49 /* SDWebImage */,
-				DDD6221B2B645CBB00EE8B49 /* SDWebImageMapKit */,
 			);
 			productName = PhotosTask;
 			productReference = DDD621E52B63D9E000EE8B49 /* PhotosTask.app */;
@@ -266,8 +254,6 @@
 			mainGroup = DDD621DC2B63D9E000EE8B49;
 			packageReferences = (
 				DDD622102B645ABA00EE8B49 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				DDD622132B645C2300EE8B49 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
-				DDD622182B645CBB00EE8B49 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = DDD621E62B63D9E000EE8B49 /* Products */;
 			projectDirPath = "";
@@ -539,22 +525,6 @@
 				minimumVersion = 5.8.1;
 			};
 		};
-		DDD622132B645C2300EE8B49 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.1;
-			};
-		};
-		DDD622182B645CBB00EE8B49 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.18.10;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -562,26 +532,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DDD622102B645ABA00EE8B49 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		DDD622142B645C2300EE8B49 /* NVActivityIndicatorView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DDD622132B645C2300EE8B49 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
-			productName = NVActivityIndicatorView;
-		};
-		DDD622162B645C2300EE8B49 /* NVActivityIndicatorViewExtended */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DDD622132B645C2300EE8B49 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
-			productName = NVActivityIndicatorViewExtended;
-		};
-		DDD622192B645CBB00EE8B49 /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DDD622182B645CBB00EE8B49 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-		DDD6221B2B645CBB00EE8B49 /* SDWebImageMapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DDD622182B645CBB00EE8B49 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
