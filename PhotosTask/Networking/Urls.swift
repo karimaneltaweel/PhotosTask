@@ -13,8 +13,8 @@ class URLs {
     
     let url = "https://jsonplaceholder.typicode.com"
     
-    func getPhotos(pageNum:Int,limit:Int) -> String {
-        url + "/photos?_page=\(pageNum)&_limit=\(limit)"
+    func getPhotos(pageNum:Int) -> String {
+        url + "/photos?_page=\(pageNum)&_limit=10"
     }
     
 }

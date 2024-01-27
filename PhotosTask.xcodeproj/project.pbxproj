@@ -160,8 +160,8 @@
 		DDD622072B63E36300EE8B49 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
-				DDD622082B63E44500EE8B49 /* PhotosViewController.swift */,
 				DDD622052B63E32B00EE8B49 /* Photos.storyboard */,
+				DDD622082B63E44500EE8B49 /* PhotosViewController.swift */,
 				DDD6220A2B63E4C100EE8B49 /* PhotosViewController+TableViewDelegates.swift */,
 			);
 			path = Photos;

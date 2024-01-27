@@ -28,7 +28,7 @@ class PhotosViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        viewModel.getPhotos(controller: self, pageNum: 1, limit: 10)
+        viewModel.getPhotos(controller: self)
     }
     
     func registerCells(){
@@ -41,7 +41,6 @@ class PhotosViewController: UIViewController {
                 return
             }
             DispatchQueue.main.async{
-                
                 if loading {
                     self?.activityIndicator.startAnimating()
                 }
@@ -55,10 +54,11 @@ class PhotosViewController: UIViewController {
             guard let photos = photos else{
                 return
             }
-
+            
             self?.PhotosData = photos
             self?.tableReload()
         }
+        
     }
     
     

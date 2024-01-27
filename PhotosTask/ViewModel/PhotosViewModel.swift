@@ -15,24 +15,25 @@ class PhotosViewModel{
     var isLoadingData:Observable<Bool> = Observable(false)
     var cellDataSource: Observable<[photosCellViewModel]> = Observable(nil)
     var dataSource:[Photo]?
+    private var PageNum = 1
     //--------------------
     func numberOfSections() -> Int{
         1
     }
     
     func numberOfRows(in sections:Int) -> Int{
-        dataSource?.count ?? 0
+        cellDataSource.value?.count ?? 0
     }
     
     
-    func getPhotos(controller:UIViewController,pageNum:Int,limit:Int) {
+    func getPhotos(controller:UIViewController) {
         if  isLoadingData.value ?? true {
             //-----data--is---loading--data has't arrived
             return
         }
         isLoadingData.value = true
         
-        NetworkCall.shared.getPhotos(pageNum: pageNum, limit: limit, controller:controller) { [weak self] result in
+        NetworkCall.shared.getPhotos(pageNum:PageNum , controller:controller) { [weak self] result in
             //----------data has arrived and have to switch the value
             self?.isLoadingData.value = false
             switch result {
@@ -48,7 +49,25 @@ class PhotosViewModel{
     }
     
     private func mapPhotoData() {
-        cellDataSource.value = self.dataSource?.compactMap({photosCellViewModel(photo:$0)})
+        if PageNum == 1 {
+            self.cellDataSource.value = self.dataSource?.compactMap({photosCellViewModel(photo:$0)})
+        }
+        else{
+            self.cellDataSource.value? += self.dataSource?.compactMap({photosCellViewModel(photo:$0)}) ?? []
+        }
       }
     
+    
+    func pagination(indexPath:Int,controller:UIViewController){
+        guard  dataSource?.count != 0 else {
+            // Data is empty or nil
+            return
+        }
+        if indexPath == (cellDataSource.value?.count ?? 0) - 1 {
+            if cellDataSource.value?.count ?? 0 < totalPhotos {
+                PageNum += 1
+                getPhotos(controller: controller)
+            }
+        }
+    }
 }

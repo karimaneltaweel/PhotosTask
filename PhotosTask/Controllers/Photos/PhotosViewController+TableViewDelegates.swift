@@ -27,5 +27,9 @@ extension PhotosViewController:UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        viewModel.pagination(indexPath: indexPath.row, controller: self)
+
+    }
     
 }
