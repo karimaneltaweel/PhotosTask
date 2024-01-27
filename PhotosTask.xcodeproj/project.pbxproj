@@ -9,21 +9,50 @@
 /* Begin PBXBuildFile section */
 		DDD621E92B63D9E000EE8B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD621E82B63D9E000EE8B49 /* AppDelegate.swift */; };
 		DDD621EB2B63D9E000EE8B49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD621EA2B63D9E000EE8B49 /* SceneDelegate.swift */; };
-		DDD621ED2B63D9E000EE8B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD621EC2B63D9E000EE8B49 /* ViewController.swift */; };
-		DDD621F02B63D9E000EE8B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD621EE2B63D9E000EE8B49 /* Main.storyboard */; };
 		DDD621F22B63D9E300EE8B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD621F12B63D9E300EE8B49 /* Assets.xcassets */; };
 		DDD621F52B63D9E300EE8B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD621F32B63D9E300EE8B49 /* LaunchScreen.storyboard */; };
+		DDD622062B63E32B00EE8B49 /* Photos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD622052B63E32B00EE8B49 /* Photos.storyboard */; };
+		DDD622092B63E44500EE8B49 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622082B63E44500EE8B49 /* PhotosViewController.swift */; };
+		DDD6220B2B63E4C100EE8B49 /* PhotosViewController+TableViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD6220A2B63E4C100EE8B49 /* PhotosViewController+TableViewDelegates.swift */; };
+		DDD6220D2B63E53900EE8B49 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD6220C2B63E53900EE8B49 /* PhotosViewModel.swift */; };
+		DDD6220F2B6459D800EE8B49 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD6220E2B6459D800EE8B49 /* Request.swift */; };
+		DDD622122B645ABA00EE8B49 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DDD622112B645ABA00EE8B49 /* Alamofire */; };
+		DDD622152B645C2300EE8B49 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = DDD622142B645C2300EE8B49 /* NVActivityIndicatorView */; };
+		DDD622172B645C2300EE8B49 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = DDD622162B645C2300EE8B49 /* NVActivityIndicatorViewExtended */; };
+		DDD6221A2B645CBB00EE8B49 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DDD622192B645CBB00EE8B49 /* SDWebImage */; };
+		DDD6221C2B645CBB00EE8B49 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DDD6221B2B645CBB00EE8B49 /* SDWebImageMapKit */; };
+		DDD6221E2B645D1F00EE8B49 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD6221D2B645D1F00EE8B49 /* Urls.swift */; };
+		DDD622212B645E6500EE8B49 /* UIImageViewExtenion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622202B645E6500EE8B49 /* UIImageViewExtenion.swift */; };
+		DDD622232B6461ED00EE8B49 /* Serivces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622222B6461ED00EE8B49 /* Serivces.swift */; };
+		DDD622252B6467BE00EE8B49 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622242B6467BE00EE8B49 /* PhotosModel.swift */; };
+		DDD622272B64777200EE8B49 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622262B64777200EE8B49 /* Observable.swift */; };
+		DDD622322B64876100EE8B49 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622302B64876100EE8B49 /* PhotosTableViewCell.swift */; };
+		DDD622332B64876100EE8B49 /* PhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDD622312B64876100EE8B49 /* PhotosTableViewCell.xib */; };
+		DDD622352B648B8400EE8B49 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622342B648B8400EE8B49 /* UIViewExtension.swift */; };
+		DDD622372B648CA400EE8B49 /* photosCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622362B648CA400EE8B49 /* photosCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DDD621E52B63D9E000EE8B49 /* PhotosTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD621E82B63D9E000EE8B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDD621EA2B63D9E000EE8B49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDD621EC2B63D9E000EE8B49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DDD621EF2B63D9E000EE8B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDD621F12B63D9E300EE8B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDD621F42B63D9E300EE8B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDD621F62B63D9E300EE8B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD622052B63E32B00EE8B49 /* Photos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Photos.storyboard; sourceTree = "<group>"; };
+		DDD622082B63E44500EE8B49 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		DDD6220A2B63E4C100EE8B49 /* PhotosViewController+TableViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotosViewController+TableViewDelegates.swift"; sourceTree = "<group>"; };
+		DDD6220C2B63E53900EE8B49 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		DDD6220E2B6459D800EE8B49 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		DDD6221D2B645D1F00EE8B49 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		DDD622202B645E6500EE8B49 /* UIImageViewExtenion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtenion.swift; sourceTree = "<group>"; };
+		DDD622222B6461ED00EE8B49 /* Serivces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serivces.swift; sourceTree = "<group>"; };
+		DDD622242B6467BE00EE8B49 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		DDD622262B64777200EE8B49 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		DDD622302B64876100EE8B49 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		DDD622312B64876100EE8B49 /* PhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosTableViewCell.xib; sourceTree = "<group>"; };
+		DDD622342B648B8400EE8B49 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		DDD622362B648CA400EE8B49 /* photosCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photosCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD622172B645C2300EE8B49 /* NVActivityIndicatorViewExtended in Frameworks */,
+				DDD6221C2B645CBB00EE8B49 /* SDWebImageMapKit in Frameworks */,
+				DDD622152B645C2300EE8B49 /* NVActivityIndicatorView in Frameworks */,
+				DDD6221A2B645CBB00EE8B49 /* SDWebImage in Frameworks */,
+				DDD622122B645ABA00EE8B49 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +90,107 @@
 		DDD621E72B63D9E000EE8B49 /* PhotosTask */ = {
 			isa = PBXGroup;
 			children = (
-				DDD621E82B63D9E000EE8B49 /* AppDelegate.swift */,
+				DDD622012B63DC4800EE8B49 /* Networking */,
+				DDD6221F2B645E3700EE8B49 /* Extension */,
+				DDD622282B64777D00EE8B49 /* Classes */,
+				DDD621FD2B63DB5800EE8B49 /* Resources */,
+				DDD621FF2B63DBDB00EE8B49 /* Model */,
+				DDD622002B63DBE100EE8B49 /* ViewModel */,
+				DDD621FE2B63DBD400EE8B49 /* Controllers */,
+				DDD622022B63E2C700EE8B49 /* View */,
 				DDD621EA2B63D9E000EE8B49 /* SceneDelegate.swift */,
-				DDD621EC2B63D9E000EE8B49 /* ViewController.swift */,
-				DDD621EE2B63D9E000EE8B49 /* Main.storyboard */,
-				DDD621F12B63D9E300EE8B49 /* Assets.xcassets */,
-				DDD621F32B63D9E300EE8B49 /* LaunchScreen.storyboard */,
+				DDD621E82B63D9E000EE8B49 /* AppDelegate.swift */,
 				DDD621F62B63D9E300EE8B49 /* Info.plist */,
 			);
 			path = PhotosTask;
+			sourceTree = "<group>";
+		};
+		DDD621FD2B63DB5800EE8B49 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDD621F12B63D9E300EE8B49 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDD621FE2B63DBD400EE8B49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDD622072B63E36300EE8B49 /* Photos */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DDD621FF2B63DBDB00EE8B49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDD622242B6467BE00EE8B49 /* PhotosModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDD622002B63DBE100EE8B49 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDD6220C2B63E53900EE8B49 /* PhotosViewModel.swift */,
+				DDD622362B648CA400EE8B49 /* photosCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDD622012B63DC4800EE8B49 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DDD6220E2B6459D800EE8B49 /* Request.swift */,
+				DDD6221D2B645D1F00EE8B49 /* Urls.swift */,
+				DDD622222B6461ED00EE8B49 /* Serivces.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DDD622022B63E2C700EE8B49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDD622292B64870400EE8B49 /* PhotoCell */,
+				DDD621F32B63D9E300EE8B49 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDD622072B63E36300EE8B49 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				DDD622082B63E44500EE8B49 /* PhotosViewController.swift */,
+				DDD622052B63E32B00EE8B49 /* Photos.storyboard */,
+				DDD6220A2B63E4C100EE8B49 /* PhotosViewController+TableViewDelegates.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		DDD6221F2B645E3700EE8B49 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DDD622202B645E6500EE8B49 /* UIImageViewExtenion.swift */,
+				DDD622342B648B8400EE8B49 /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DDD622282B64777D00EE8B49 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DDD622262B64777200EE8B49 /* Observable.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DDD622292B64870400EE8B49 /* PhotoCell */ = {
+			isa = PBXGroup;
+			children = (
+				DDD622302B64876100EE8B49 /* PhotosTableViewCell.swift */,
+				DDD622312B64876100EE8B49 /* PhotosTableViewCell.xib */,
+			);
+			path = PhotoCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +209,13 @@
 			dependencies = (
 			);
 			name = PhotosTask;
+			packageProductDependencies = (
+				DDD622112B645ABA00EE8B49 /* Alamofire */,
+				DDD622142B645C2300EE8B49 /* NVActivityIndicatorView */,
+				DDD622162B645C2300EE8B49 /* NVActivityIndicatorViewExtended */,
+				DDD622192B645CBB00EE8B49 /* SDWebImage */,
+				DDD6221B2B645CBB00EE8B49 /* SDWebImageMapKit */,
+			);
 			productName = PhotosTask;
 			productReference = DDD621E52B63D9E000EE8B49 /* PhotosTask.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +244,11 @@
 				Base,
 			);
 			mainGroup = DDD621DC2B63D9E000EE8B49;
+			packageReferences = (
+				DDD622102B645ABA00EE8B49 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DDD622132B645C2300EE8B49 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				DDD622182B645CBB00EE8B49 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = DDD621E62B63D9E000EE8B49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +263,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD622332B64876100EE8B49 /* PhotosTableViewCell.xib in Resources */,
+				DDD622062B63E32B00EE8B49 /* Photos.storyboard in Resources */,
 				DDD621F52B63D9E300EE8B49 /* LaunchScreen.storyboard in Resources */,
 				DDD621F22B63D9E300EE8B49 /* Assets.xcassets in Resources */,
-				DDD621F02B63D9E000EE8B49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +277,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD621ED2B63D9E000EE8B49 /* ViewController.swift in Sources */,
+				DDD622322B64876100EE8B49 /* PhotosTableViewCell.swift in Sources */,
+				DDD622372B648CA400EE8B49 /* photosCellViewModel.swift in Sources */,
+				DDD6220B2B63E4C100EE8B49 /* PhotosViewController+TableViewDelegates.swift in Sources */,
+				DDD622352B648B8400EE8B49 /* UIViewExtension.swift in Sources */,
+				DDD6220F2B6459D800EE8B49 /* Request.swift in Sources */,
+				DDD622212B645E6500EE8B49 /* UIImageViewExtenion.swift in Sources */,
+				DDD622092B63E44500EE8B49 /* PhotosViewController.swift in Sources */,
+				DDD6220D2B63E53900EE8B49 /* PhotosViewModel.swift in Sources */,
 				DDD621E92B63D9E000EE8B49 /* AppDelegate.swift in Sources */,
+				DDD622252B6467BE00EE8B49 /* PhotosModel.swift in Sources */,
+				DDD622272B64777200EE8B49 /* Observable.swift in Sources */,
+				DDD6221E2B645D1F00EE8B49 /* Urls.swift in Sources */,
 				DDD621EB2B63D9E000EE8B49 /* SceneDelegate.swift in Sources */,
+				DDD622232B6461ED00EE8B49 /* Serivces.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DDD621EE2B63D9E000EE8B49 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DDD621EF2B63D9E000EE8B49 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DDD621F32B63D9E300EE8B49 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +439,6 @@
 				INFOPLIST_FILE = PhotosTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +466,6 @@
 				INFOPLIST_FILE = PhotosTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +503,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDD622102B645ABA00EE8B49 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		DDD622132B645C2300EE8B49 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		DDD622182B645CBB00EE8B49 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.10;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDD622112B645ABA00EE8B49 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDD622102B645ABA00EE8B49 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DDD622142B645C2300EE8B49 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDD622132B645C2300EE8B49 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		DDD622162B645C2300EE8B49 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDD622132B645C2300EE8B49 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+		DDD622192B645CBB00EE8B49 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDD622182B645CBB00EE8B49 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		DDD6221B2B645CBB00EE8B49 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDD622182B645CBB00EE8B49 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDD621DD2B63D9E000EE8B49 /* Project object */;
 }
