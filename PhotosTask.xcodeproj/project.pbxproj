@@ -71,6 +71,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DDCAE1EF2B65A00300478FDA /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				DDCAE1F02B65A01A00478FDA /* ViewModel */,
+				DDCAE1F22B65A02900478FDA /* Model */,
+				DDCAE1F12B65A02200478FDA /* View */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		DDCAE1F02B65A01A00478FDA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDD6220C2B63E53900EE8B49 /* PhotosViewModel.swift */,
+				DDD622362B648CA400EE8B49 /* photosCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDCAE1F12B65A02200478FDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDD622292B64870400EE8B49 /* PhotoCell */,
+				DDD622052B63E32B00EE8B49 /* Photos.storyboard */,
+				DDD622082B63E44500EE8B49 /* PhotosViewController.swift */,
+				DDD6220A2B63E4C100EE8B49 /* PhotosViewController+TableViewDelegates.swift */,
+				DDD6223F2B65103E00EE8B49 /* PhotosViewController+Helper.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDCAE1F22B65A02900478FDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDD622242B6467BE00EE8B49 /* PhotosModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDCAE1F32B65A0A700478FDA /* PhotoZooming */ = {
+			isa = PBXGroup;
+			children = (
+				DDCAE1F52B65A0C800478FDA /* Model */,
+				DDCAE1F62B65A0CE00478FDA /* ViewModel */,
+				DDCAE1F42B65A0BD00478FDA /* View */,
+			);
+			path = PhotoZooming;
+			sourceTree = "<group>";
+		};
+		DDCAE1F42B65A0BD00478FDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDD622452B65180700EE8B49 /* PhotoZoomingViewController.swift */,
+				DDD622462B65180700EE8B49 /* PhotoZoomingViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDCAE1F52B65A0C800478FDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDCAE1F62B65A0CE00478FDA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDD6223D2B650B5700EE8B49 /* PhotoZoomingViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		DDD621DC2B63D9E000EE8B49 = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +167,9 @@
 				DDD6221F2B645E3700EE8B49 /* Extension */,
 				DDD622282B64777D00EE8B49 /* Classes */,
 				DDD621FD2B63DB5800EE8B49 /* Resources */,
-				DDD621FF2B63DBDB00EE8B49 /* Model */,
-				DDD622002B63DBE100EE8B49 /* ViewModel */,
-				DDD621FE2B63DBD400EE8B49 /* Controllers */,
 				DDD622022B63E2C700EE8B49 /* View */,
+				DDCAE1F32B65A0A700478FDA /* PhotoZooming */,
+				DDCAE1EF2B65A00300478FDA /* Photos */,
 				DDD621EA2B63D9E000EE8B49 /* SceneDelegate.swift */,
 				DDD621E82B63D9E000EE8B49 /* AppDelegate.swift */,
 				DDD621F62B63D9E300EE8B49 /* Info.plist */,
@@ -113,33 +185,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		DDD621FE2B63DBD400EE8B49 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				DDD622382B65090600EE8B49 /* PhotoZoomingView */,
-				DDD622072B63E36300EE8B49 /* Photos */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		DDD621FF2B63DBDB00EE8B49 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DDD622242B6467BE00EE8B49 /* PhotosModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DDD622002B63DBE100EE8B49 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				DDD6220C2B63E53900EE8B49 /* PhotosViewModel.swift */,
-				DDD622362B648CA400EE8B49 /* photosCellViewModel.swift */,
-				DDD6223D2B650B5700EE8B49 /* PhotoZoomingViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		DDD622012B63DC4800EE8B49 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,21 +198,9 @@
 		DDD622022B63E2C700EE8B49 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DDD622292B64870400EE8B49 /* PhotoCell */,
 				DDD621F32B63D9E300EE8B49 /* LaunchScreen.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		DDD622072B63E36300EE8B49 /* Photos */ = {
-			isa = PBXGroup;
-			children = (
-				DDD622052B63E32B00EE8B49 /* Photos.storyboard */,
-				DDD622082B63E44500EE8B49 /* PhotosViewController.swift */,
-				DDD6220A2B63E4C100EE8B49 /* PhotosViewController+TableViewDelegates.swift */,
-				DDD6223F2B65103E00EE8B49 /* PhotosViewController+Helper.swift */,
-			);
-			path = Photos;
 			sourceTree = "<group>";
 		};
 		DDD6221F2B645E3700EE8B49 /* Extension */ = {
@@ -194,15 +227,6 @@
 				DDD622312B64876100EE8B49 /* PhotosTableViewCell.xib */,
 			);
 			path = PhotoCell;
-			sourceTree = "<group>";
-		};
-		DDD622382B65090600EE8B49 /* PhotoZoomingView */ = {
-			isa = PBXGroup;
-			children = (
-				DDD622452B65180700EE8B49 /* PhotoZoomingViewController.swift */,
-				DDD622462B65180700EE8B49 /* PhotoZoomingViewController.xib */,
-			);
-			path = PhotoZoomingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

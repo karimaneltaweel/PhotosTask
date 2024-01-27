@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import Alamofire
 
 class PhotosViewModel{
     
     private let totalPhotos = 5000
-    //------binding----
+    //MARK: -binding
     var isLoadingData:Observable<Bool> = Observable(false)
     var cellDataSource: Observable<[photosCellViewModel]> = Observable(nil)
     var dataSource:[Photo]?
@@ -54,7 +55,7 @@ class PhotosViewModel{
         else{
             self.cellDataSource.value? += self.dataSource?.compactMap({photosCellViewModel(photo:$0)}) ?? []
         }
-      }
+    }
     
     
     func pagination(indexPath:Int){
@@ -71,6 +72,6 @@ class PhotosViewModel{
     }
     
     func retrivePhoto(photo: Photo) -> Photo? {
-          return photo
-      }
+        return photo
+    }
 }

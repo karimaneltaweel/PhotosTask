@@ -12,7 +12,7 @@ struct Photo: Codable {
     var albumID, id: Int?
     var title: String?
     var url, thumbnailURL: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case albumID = "albumId"
         case id, title, url

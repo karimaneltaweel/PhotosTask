@@ -12,8 +12,7 @@ class PhotoZoomingViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
-    
-    //View model
+    //MARK: -View model
     var viewModel: PhotoZoomingViewModel
     
     init(viewModel: PhotoZoomingViewModel) {
@@ -42,14 +41,14 @@ class PhotoZoomingViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func configView() {
-        img.cacheImage(urlString:viewModel.PhotoUrl)
+        img.cacheImage(urlString:viewModel.photoUrl)
     }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return img
     }
     
-
+    
     func configurScroll(){
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 6.0

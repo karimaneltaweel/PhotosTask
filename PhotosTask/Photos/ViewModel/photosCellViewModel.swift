@@ -9,7 +9,7 @@ import Foundation
 
 class photosCellViewModel{
     var photoData: Photo
-
+    
     var title: String?
     var imageUrl:String?
     var id:Int?

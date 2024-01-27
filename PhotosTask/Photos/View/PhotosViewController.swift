@@ -8,23 +8,22 @@
 import UIKit
 
 class PhotosViewController: UIViewController {
-
+    
     //----IBOutlet:
     @IBOutlet weak var photosTable: UITableView!{
         didSet{
             registerCells()
         }
     }
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    //--------viewModel
+    //MARK: -viewModel
     var viewModel:PhotosViewModel = PhotosViewModel()
-    //------------data
-    var PhotosData:[photosCellViewModel] = []
+    //MARK: -data
+    var photosData:[photosCellViewModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        BindViewModel()
+        bindViewModel()
     }
     
     override func viewWillAppear(_ animated: Bool) {

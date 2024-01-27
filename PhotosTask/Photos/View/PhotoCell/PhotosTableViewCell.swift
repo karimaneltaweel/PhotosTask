@@ -9,16 +9,17 @@ import UIKit
 
 class PhotosTableViewCell: UITableViewCell {
     
-    //---IBOutlet-
+    //MARK: -IBOutlet-
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var photoTitle: UILabel!
     @IBOutlet weak var containerView: UIView!
-    //------------
+
     static var identifier: String {
-         get {
-             "PhotosTableViewCell"
-         }
-     }
+        get {
+            "PhotosTableViewCell"
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,8 +28,8 @@ class PhotosTableViewCell: UITableViewCell {
     }
     
     static func register() -> UINib {
-          UINib(nibName: "PhotosTableViewCell", bundle: nil)
-       }
+        UINib(nibName: "PhotosTableViewCell", bundle: nil)
+    }
     
     func setUpPhotoCell(photoCell:photosCellViewModel){
         photo.cacheImage(urlString:photoCell.imageUrl ?? "")

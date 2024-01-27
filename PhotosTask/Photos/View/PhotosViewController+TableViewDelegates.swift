@@ -23,18 +23,17 @@ extension PhotosViewController:UITableViewDelegate, UITableViewDataSource{
             return UITableViewCell()
         }
         
-        cell.setUpPhotoCell(photoCell:PhotosData[indexPath.row])
+        cell.setUpPhotoCell(photoCell:photosData[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         viewModel.pagination(indexPath: indexPath.row)
-
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let photoId = PhotosData[indexPath.row].id ?? 0
-        self.openDetails(photo:PhotosData[indexPath.row].photoData)
-      }
+        self.openZoom(photo:photosData[indexPath.row].photoData)
+    }
     
 }

@@ -8,12 +8,12 @@
 import Foundation
 
 extension PhotosViewController{
-    
+    //MARK: - REGISTER CELL FOR TABLE
     func registerCells(){
         photosTable.register(PhotosTableViewCell.register(), forCellReuseIdentifier:PhotosTableViewCell.identifier)
     }
-    
-    func BindViewModel(){
+    //MARK: - NOTIFY WHEN CHANGE HAPPENED
+    func bindViewModel(){
         viewModel.isLoadingData.bind { [weak self] isLoading in
             guard let loading = isLoading else{
                 return
@@ -33,29 +33,27 @@ extension PhotosViewController{
                 return
             }
             
-            self?.PhotosData = photos
+            self?.photosData = photos
             self?.tableReload()
         }
-        
     }
-    
-    
+    //MARK: - RELOAD TABLE
     func tableReload(){
         DispatchQueue.main.async{
             self.photosTable.reloadData()
         }
     }
-    
-    func openDetails(photo:Photo) {
+    //MARK: - NAVIGATION To ZOOM VIEW
+    func openZoom(photo:Photo) {
         guard let photo = viewModel.retrivePhoto(photo: photo) else {
-             return
-         }
-         
-         DispatchQueue.main.async {
-             let photoZoomViewModel = PhotoZoomingViewModel(photo: photo)
-             let controller = PhotoZoomingViewController(viewModel: photoZoomViewModel)
-             controller.modalPresentationStyle = .fullScreen
-             self.navigationController?.present(controller, animated: true)
-         }
-     }
- }
+            return
+        }
+        
+        DispatchQueue.main.async {
+            let photoZoomViewModel = PhotoZoomingViewModel(photo: photo)
+            let controller = PhotoZoomingViewController(viewModel: photoZoomViewModel)
+            controller.modalPresentationStyle = .fullScreen
+            self.navigationController?.present(controller, animated: true)
+        }
+    }
+}
