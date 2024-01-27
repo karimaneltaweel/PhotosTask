@@ -11,7 +11,7 @@ import NVActivityIndicatorView
 
 class Request {
     
-    class func request<T: Codable>(vc: UIViewController, url: String, method: HTTPMethod, parameters: Parameters?, encoding: ParameterEncoding, headers: HTTPHeaders?, callBack:@escaping (Result<T, Error>) -> Void) {
+    class func request<T: Codable>(url: String, method: HTTPMethod, parameters: Parameters?, encoding: ParameterEncoding, headers: HTTPHeaders?, callBack:@escaping (Result<T, Error>) -> Void) {
             
             let jsonDecodeer = JSONDecoder()
             

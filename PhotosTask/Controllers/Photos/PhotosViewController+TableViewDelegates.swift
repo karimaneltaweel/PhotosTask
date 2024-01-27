@@ -28,8 +28,13 @@ extension PhotosViewController:UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        viewModel.pagination(indexPath: indexPath.row, controller: self)
+        viewModel.pagination(indexPath: indexPath.row)
 
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let photoId = PhotosData[indexPath.row].id ?? 0
+        self.openDetails(photoId:photoId)
+      }
     
 }

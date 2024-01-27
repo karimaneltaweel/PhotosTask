@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 class PhotosViewModel{
     
@@ -26,14 +25,14 @@ class PhotosViewModel{
     }
     
     
-    func getPhotos(controller:UIViewController) {
+    func getPhotos() {
         if  isLoadingData.value ?? true {
             //-----data--is---loading--data has't arrived
             return
         }
         isLoadingData.value = true
         
-        NetworkCall.shared.getPhotos(pageNum:PageNum , controller:controller) { [weak self] result in
+        NetworkCall.shared.getPhotos(pageNum:PageNum) { [weak self] result in
             //----------data has arrived and have to switch the value
             self?.isLoadingData.value = false
             switch result {
@@ -58,7 +57,7 @@ class PhotosViewModel{
       }
     
     
-    func pagination(indexPath:Int,controller:UIViewController){
+    func pagination(indexPath:Int){
         guard  dataSource?.count != 0 else {
             // Data is empty or nil
             return
@@ -66,8 +65,16 @@ class PhotosViewModel{
         if indexPath == (cellDataSource.value?.count ?? 0) - 1 {
             if cellDataSource.value?.count ?? 0 < totalPhotos {
                 PageNum += 1
-                getPhotos(controller: controller)
+                getPhotos()
             }
         }
     }
+    
+    func retrivePhoto(withId id: Int) -> Photo? {
+          guard let photo = dataSource?.first(where: {$0.id == id}) else {
+              return nil
+          }
+          
+          return photo
+      }
 }

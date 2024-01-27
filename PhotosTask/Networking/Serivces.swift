@@ -13,9 +13,9 @@ class NetworkCall {
     static let shared = NetworkCall()
     private init() {}
     
-    func getPhotos(pageNum:Int,controller:UIViewController,completion :@escaping (Result<[Photo]?,Error>) -> Void) {
+    func getPhotos(pageNum:Int,completion :@escaping (Result<[Photo]?,Error>) -> Void) {
         
-        Request.request(vc: controller, url: URLs.Instance.getPhotos(pageNum: pageNum), method: .get, parameters: nil, encoding:  URLEncoding.default, headers: nil, callBack: completion)
+        Request.request(url: URLs.Instance.getPhotos(pageNum: pageNum), method: .get, parameters: nil, encoding:  URLEncoding.default, headers: nil, callBack: completion)
     }
     
 }

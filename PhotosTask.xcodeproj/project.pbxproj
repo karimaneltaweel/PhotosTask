@@ -30,6 +30,10 @@
 		DDD622332B64876100EE8B49 /* PhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDD622312B64876100EE8B49 /* PhotosTableViewCell.xib */; };
 		DDD622352B648B8400EE8B49 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622342B648B8400EE8B49 /* UIViewExtension.swift */; };
 		DDD622372B648CA400EE8B49 /* photosCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622362B648CA400EE8B49 /* photosCellViewModel.swift */; };
+		DDD6223E2B650B5700EE8B49 /* PhotoZoomingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD6223D2B650B5700EE8B49 /* PhotoZoomingViewModel.swift */; };
+		DDD622402B65103E00EE8B49 /* PhotosViewController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD6223F2B65103E00EE8B49 /* PhotosViewController+Helper.swift */; };
+		DDD622472B65180700EE8B49 /* PhotoZoomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD622452B65180700EE8B49 /* PhotoZoomingViewController.swift */; };
+		DDD622482B65180700EE8B49 /* PhotoZoomingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDD622462B65180700EE8B49 /* PhotoZoomingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,10 @@
 		DDD622312B64876100EE8B49 /* PhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosTableViewCell.xib; sourceTree = "<group>"; };
 		DDD622342B648B8400EE8B49 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		DDD622362B648CA400EE8B49 /* photosCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photosCellViewModel.swift; sourceTree = "<group>"; };
+		DDD6223D2B650B5700EE8B49 /* PhotoZoomingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoZoomingViewModel.swift; sourceTree = "<group>"; };
+		DDD6223F2B65103E00EE8B49 /* PhotosViewController+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotosViewController+Helper.swift"; sourceTree = "<group>"; };
+		DDD622452B65180700EE8B49 /* PhotoZoomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoZoomingViewController.swift; sourceTree = "<group>"; };
+		DDD622462B65180700EE8B49 /* PhotoZoomingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoZoomingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,7 @@
 		DDD621FE2B63DBD400EE8B49 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DDD622382B65090600EE8B49 /* PhotoZoomingView */,
 				DDD622072B63E36300EE8B49 /* Photos */,
 			);
 			path = Controllers;
@@ -134,6 +143,7 @@
 			children = (
 				DDD6220C2B63E53900EE8B49 /* PhotosViewModel.swift */,
 				DDD622362B648CA400EE8B49 /* photosCellViewModel.swift */,
+				DDD6223D2B650B5700EE8B49 /* PhotoZoomingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -163,6 +173,7 @@
 				DDD622052B63E32B00EE8B49 /* Photos.storyboard */,
 				DDD622082B63E44500EE8B49 /* PhotosViewController.swift */,
 				DDD6220A2B63E4C100EE8B49 /* PhotosViewController+TableViewDelegates.swift */,
+				DDD6223F2B65103E00EE8B49 /* PhotosViewController+Helper.swift */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -191,6 +202,15 @@
 				DDD622312B64876100EE8B49 /* PhotosTableViewCell.xib */,
 			);
 			path = PhotoCell;
+			sourceTree = "<group>";
+		};
+		DDD622382B65090600EE8B49 /* PhotoZoomingView */ = {
+			isa = PBXGroup;
+			children = (
+				DDD622452B65180700EE8B49 /* PhotoZoomingViewController.swift */,
+				DDD622462B65180700EE8B49 /* PhotoZoomingViewController.xib */,
+			);
+			path = PhotoZoomingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +287,7 @@
 				DDD622062B63E32B00EE8B49 /* Photos.storyboard in Resources */,
 				DDD621F52B63D9E300EE8B49 /* LaunchScreen.storyboard in Resources */,
 				DDD621F22B63D9E300EE8B49 /* Assets.xcassets in Resources */,
+				DDD622482B65180700EE8B49 /* PhotoZoomingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,13 +305,16 @@
 				DDD6220F2B6459D800EE8B49 /* Request.swift in Sources */,
 				DDD622212B645E6500EE8B49 /* UIImageViewExtenion.swift in Sources */,
 				DDD622092B63E44500EE8B49 /* PhotosViewController.swift in Sources */,
+				DDD622402B65103E00EE8B49 /* PhotosViewController+Helper.swift in Sources */,
 				DDD6220D2B63E53900EE8B49 /* PhotosViewModel.swift in Sources */,
 				DDD621E92B63D9E000EE8B49 /* AppDelegate.swift in Sources */,
 				DDD622252B6467BE00EE8B49 /* PhotosModel.swift in Sources */,
 				DDD622272B64777200EE8B49 /* Observable.swift in Sources */,
 				DDD6221E2B645D1F00EE8B49 /* Urls.swift in Sources */,
 				DDD621EB2B63D9E000EE8B49 /* SceneDelegate.swift in Sources */,
+				DDD622472B65180700EE8B49 /* PhotoZoomingViewController.swift in Sources */,
 				DDD622232B6461ED00EE8B49 /* Serivces.swift in Sources */,
+				DDD6223E2B650B5700EE8B49 /* PhotoZoomingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +465,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +493,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
